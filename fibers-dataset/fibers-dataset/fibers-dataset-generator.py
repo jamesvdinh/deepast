@@ -33,8 +33,8 @@ def voxelize_skeleton(annotation, output_shape=(100, 100, 100), origins=(0, 0, 0
     # Create an empty voxel grid
     voxel_grid = np.zeros(output_shape, dtype=np.uint8)
     origins = np.array(origins)
-    for group in annotation.skeleton.groups:
-        for tree in tqdm(group.trees, desc="Trees"):
+    for group in tqdm(annotation.skeleton.groups, desc="Groups"):
+        for tree in tqdm(group.trees, desc="Trees in groups"):
             temp_fiber = np.zeros_like(voxel_grid)
             for node1, node2 in tree.edges:
                 # Perform adaptive interpolation
@@ -47,6 +47,19 @@ def voxelize_skeleton(annotation, output_shape=(100, 100, 100), origins=(0, 0, 0
                     if np.all((0 <= voxel_coords) & (voxel_coords < np.asarray(output_shape))):
                         temp_fiber[tuple(voxel_coords)] = 1
             voxel_grid = np.maximum(voxel_grid, temp_fiber)
+    for tree in tqdm(annotation.skeleton.trees, desc="Trees in root"):
+        temp_fiber = np.zeros_like(voxel_grid)
+        for node1, node2 in tree.edges:
+            # Perform adaptive interpolation
+            node1_pos = np.array([node1.position.x, node1.position.y, node1.position.z])
+            node2_pos = np.array([node2.position.x, node2.position.y, node2.position.z])
+            interpolated_points = interpolate_adaptive(node1_pos, node2_pos)
+            # Convert points to voxel space and filter bounds
+            for point in interpolated_points:
+                voxel_coords = (point - origins).astype(int)
+                if np.all((0 <= voxel_coords) & (voxel_coords < np.asarray(output_shape))):
+                    temp_fiber[tuple(voxel_coords)] = 1
+        voxel_grid = np.maximum(voxel_grid, temp_fiber)
     binary_inverted = 1 - voxel_grid
     # Compute the Euclidean Distance Transform
     edt = distance_transform_edt(binary_inverted)
