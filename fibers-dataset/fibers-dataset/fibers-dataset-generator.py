@@ -1,7 +1,9 @@
 # Giorgio Angelotti - 2024
 import argparse
 import os
-from webknossos import Annotation
+import webknossos as wk
+from webknossos import webknossos_context
+from webknossos import Annotation, webknossos_context
 import numpy as np
 import tifffile
 from scipy.ndimage import distance_transform_edt
@@ -122,19 +124,56 @@ if __name__ == "__main__":
     )
 
     # Write annotation labels
-    labels_filename = os.path.join(labels_folder, f"{scroll_id}_{z_start:05d}_{y_start:05d}_{x_start:05d}.tif")
-    print(f"Writing annotation to {labels_filename}...")
+    labels_filename_std = os.path.join(labels_folder, f"{scroll_id}_{z_start:05d}_{y_start:05d}_{x_start:05d}_{size}_std.tif")
+    labels_filename = os.path.join(labels_folder, f"{scroll_id}_{z_start:05d}_{y_start:05d}_{x_start:05d}_{size}.tif")
+    print(f"Writing annotation to {labels_filename} and {labels_filename_std}...")
     tifffile.imwrite(labels_filename, voxel_grid)
+    tifffile.imwrite(labels_filename_std, voxel_grid)
     print("Annotation wrote.")
 
     # Load and write image chunk
-    print("Loading volume (using the vesuvius library for demonstration)...")
+    images_filename = os.path.join(images_folder, f"{scroll_id}_{z_start:05d}_{y_start:05d}_{x_start:05d}_{size}_0000.tif")
+    images_filename_std = os.path.join(images_folder, f"{scroll_id}_{z_start:05d}_{y_start:05d}_{x_start:05d}_{size}_std_0000.tif")
+    print(f"Writing image chunk to {images_filename} and {images_filename_std}...")
+
+    print("Loading volume (using webknossos)...")
+
+    WK_URL = "http://dl.ash2txt.org:8080"
+
+    # Open and read the token file
+    with open("token.txt", "r") as file:
+        TOKEN = file.read().strip()
+
+    print(f"Loaded TOKEN: {TOKEN}")
+
+    ORGANIZATION_ID = "Scroll_Prize"
+
+    # define bounding box
+    bb = wk.NDBoundingBox(topleft=(x_start, y_start, z_start), size=(size, size, size), index=(0,1,2), axes=('x', 'y', 'z'))
+
+
+    if int(scroll_id[1:]) == 1:
+        dataset_name = "scroll1a"
+    elif int(scroll_id[1:]) == 5:
+        dataset_name = "scroll5-full"
+
+    with webknossos_context(url=WK_URL, token=TOKEN):
+        ds = wk.Dataset.open_remote(dataset_name, ORGANIZATION_ID)
+
+        volume = ds.get_layer("volume")
+        view = volume.get_mag("1").get_view(absolute_bounding_box=bb)
+        data = np.clip(view.read()[0].astype(np.float64)/257,0,255).astype(np.uint8)
+        data = np.transpose(data, (2, 1, 0))
+
+        tifffile.imwrite(images_filename, data)
+
+    print("Done 1/2")
+
+    print("Loading standardized volume (using the vesuvius library)...")
     scroll_volume = Volume(f"Scroll{int(scroll_id[1:])}")
-    images_filename = os.path.join(images_folder, f"{scroll_id}_{z_start:05d}_{y_start:05d}_{x_start:05d}_0000.tif")
-    print(f"Writing image chunk to {images_filename}...")
     tifffile.imwrite(
-        images_filename,
+        images_filename_std,
         scroll_volume[z_start:z_start+size, y_start:y_start+size, x_start:x_start+size]
     )
 
-    print("Done.")
+    print("Done 2/2")
