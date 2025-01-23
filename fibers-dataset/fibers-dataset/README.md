@@ -12,9 +12,11 @@ conda activate fibers-dataset
 vesuvius.accept_terms --yes
 ```
 
+Copy your WebKnossos Auth Token into a `token.txt` file in this folder.
+
 ## Example Usage
 ```bash
-python fibers-dataset-generator.py --nml_path fibers_s5_06500z_02000y_04000x_v03.nml --size 500 --output_folder output
+python fibers-dataset-generator.py --nml_path fibers_s5_06500z_02000y_04000x_500_v03.nml --output_folder output
 ```
 
 The example annotation was done by Elian Rafael Dal Prá
