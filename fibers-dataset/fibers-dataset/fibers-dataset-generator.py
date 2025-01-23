@@ -97,7 +97,7 @@ if __name__ == "__main__":
 
     # Load the annotation
     annotation = Annotation.load(args.nml_path)
-    size = args.size
+    # size = args.size
 
     # Inspect the loaded annotation
     print(f"Annotation Name: {annotation.name}")
