@@ -85,7 +85,7 @@ if __name__ == "__main__":
         description="Voxelize a skeleton .nml and save the annotation + volume chunk."
     )
     parser.add_argument("--nml_path", required=True, help="Path to the .nml file.")
-    parser.add_argument("--size", type=int, required=True, help="Chunk size.")
+    # parser.add_argument("--size", type=int, required=True, help="Chunk size.")
     parser.add_argument("--output_folder", required=True, help="Output folder path.")
     args = parser.parse_args()
 
@@ -112,6 +112,7 @@ if __name__ == "__main__":
     z_start = int(parts[2][:-1])
     y_start = int(parts[3][:-1])
     x_start = int(parts[4][:-1])
+    size = int(parts[5])
     print(f"Scroll: {scroll_id}")
     print(f"Starting coordinates: {z_start},{y_start},{x_start}. Chunk size {size}")
 
