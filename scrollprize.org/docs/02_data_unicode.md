@@ -1,5 +1,5 @@
 ---
-title: "Image Photos / Segments"
+title: "Unicode Codepoints"
 hide_table_of_contents: true
 ---
 
