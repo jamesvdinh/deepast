@@ -8,7 +8,7 @@ const remarkMath = require("remark-math").default; // Extract default export for
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Vesuvius Challenge",
+  title: "Deep Past Challenge",
   tagline: "A $1,000,000+ machine learning and computer vision competition",
   url: "https://scrollprize.org",
   baseUrl: "/",
@@ -65,7 +65,7 @@ const config = {
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
         navbar: {
-          title: "Vesuvius Challenge",
+          title: "Deep Past Challenge",
           logo: {
             alt: "Vesuvius Challenge Logo",
             src: "img/social/favicon-64x64.png",
