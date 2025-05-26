@@ -70,14 +70,6 @@ const LatestPosts = () => {
         subtext="$1.5M+ already awarded"
         useArrow={true}
       />
-      {posts.map((post, index) => (
-        <TopCard
-          key={index}
-          title={post.title}
-          href={post.href}
-          subtext={post.subtext}
-        />
-      ))}
     </div>
   );
 };
