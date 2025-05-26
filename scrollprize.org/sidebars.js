@@ -30,7 +30,7 @@ const sidebars = {
   overviewSidebar: [
     {
       type: 'html',
-      value: '<a class="navbar__brand custom-top-header" href="/"><div class="navbar__logo"><img src="/img/social/favicon-64x64.png" alt="Vesuvius Challenge Logo" class="themedImage_ToTc themedImage--dark_i4oU"></div><b class="navbar__title text--truncate">Vesuvius Challenge</b></a>'
+      value: '<a class="navbar__brand custom-top-header" href="/"><div class="navbar__logo"><img src="/img/social/favicon-64x64.png" alt="Vesuvius Challenge Logo" class="themedImage_ToTc themedImage--dark_i4oU"></div><b class="navbar__title text--truncate">Deep Past Challenge</b></a>'
     },
     {
       type: 'category',
@@ -38,18 +38,14 @@ const sidebars = {
       link: { type: 'doc', id: 'landing' },
       items: [
         { type: 'doc', id: 'get_started' },
-        { type: 'doc', id: 'prizes' },
-        { type: 'doc', id: 'unwrapping' },
-        { type: 'doc', id: 'master_plan' },
       ]
     },
     {
       type: 'category',
       label: 'Competition',
-      link: { type: 'doc', id: 'winners' },
+      link: { type: 'doc', id: 'challenges' },
       items: [
-        { type: 'doc', id: 'winners' },
-        { type: 'doc', id: 'community_projects' },
+        { type: 'doc', id: 'challenges' },
       ],
     },
     {
@@ -59,10 +55,10 @@ const sidebars = {
       collapsed: true,
       link: { type: 'doc', id: 'data' },
       items: [
-        { type: 'doc', id: 'data_scrolls' },
-        { type: 'doc', id: 'data_fragments' },
+        { type: 'doc', id: 'data_akkadian' },
+        { type: 'doc', id: 'data_english' },
+        { type: 'doc', id: 'data_unicode' },
         { type: 'doc', id: 'data_segments' },
-        { type: 'doc', id: 'data_datasets' },
       ],
     },
     {
@@ -72,10 +68,9 @@ const sidebars = {
       collapsed: true,
       link: { type: 'doc', id: 'tutorial' },
       items: [
-        { type: 'doc', id: 'tutorial1' },
-        { type: 'doc', id: 'tutorial2' },
-        { type: 'doc', id: 'segmentation' },
-        { type: 'doc', id: 'tutorial5' },
+        { type: 'doc', id: 'tutorial_accessibility' },
+        { type: 'doc', id: 'tutorial_conversion' },
+        { type: 'doc', id: 'tutorial_linguistics' },
       ],
     },
     { type: 'doc', id: 'faq' },
@@ -83,24 +78,8 @@ const sidebars = {
       type: 'link',
       label: 'Discord',
       href: 'https://discord.gg/V4fJhvtaQn',
-    },
-    {
-      type: 'link',
-      label: 'Mailing list',
-      href: 'https://scrollprize.substack.com/',
-    },
-    {
-      type: 'link',
-      label: '𝕏',
-      href: 'https://x.com/scrollprize',
-    },
-    {
-      type: 'link',
-      label: 'Donate',
-      href: 'https://donate.stripe.com/aEUg101vt9eN8gM144',
-    },
-    { type: 'doc', id: 'jobs' },
-  ],
+    }
+    ],
   archiveSidebar: [
     {
       type: 'html',
