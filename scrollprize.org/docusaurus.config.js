@@ -9,6 +9,8 @@ const remarkMath = require("remark-math").default; // Extract default export for
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Deep Past Challenge",
+  organizationName: "jamesvdinh",
+  projectName: "deepast",
   tagline: "A $1,000,000+ machine learning and computer vision competition",
   url: "https://scrollprize.org",
   baseUrl: "/",
