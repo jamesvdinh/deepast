@@ -10,144 +10,144 @@ const inlineImage = (src) => (
   />
 );
 
-const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
-  {
-    date: "79 AD",
-    text: "Mount Vesuvius erupts.",
-    anchor: "vesuvius",
-    description: (
-      <>
-        <div className="mb-4 max-w-3xl">
-          In Herculaneum, twenty meters of hot mud and ash bury an enormous
-          villa once owned by the father-in-law of Julius Caesar. Inside, there
-          is a vast library of papyrus scrolls.
-        </div>
-        <div className="mb-8 max-w-3xl">
-          The scrolls are carbonized by the heat of the volcanic debris. But
-          they are also preserved. For centuries, as virtually every ancient
-          text exposed to the air decays and disappears, the library of the
-          Villa of the Papyri waits underground, intact.
-        </div>
-        {inlineImage("/img/landing/rocio-espin-pinar-villa-papyri-small.webp")}
-      </>
-    ),
-    background: "/img/landing/story1.webp",
-  },
-  {
-    date: "1750 AD",
-    text: "A farmer discovers the buried villa.",
-    description: (
-      <>
-        <div className="max-w-3xl mb-8">
-          While digging a well, an Italian farmworker encounters a marble
-          pavement. Excavations unearth beautiful statues and frescoes – and
-          hundreds of scrolls. Carbonized and ashen, they are extremely fragile.
-          But the temptation to open them is great; if read, they would
-          significantly increase the corpus of literature we have from
-          antiquity.
-        </div>
-        <div className="max-w-3xl mb-8">
-          Early attempts to open the scrolls unfortunately destroy many of them.
-          A few are painstakingly unrolled by a monk over several decades, and
-          they are found to contain philosophical texts written in Greek. More
-          than six hundred remain unopened and unreadable.
-        </div>
-        {inlineImage("/img/landing/scroll.webp")}
-        {inlineImage("/img/landing/herc-materials.webp")}
-      </>
-    ),
-    background: "/img/landing/story2.webp",
-  },
-  {
-    date: "2015 AD",
-    text: "Dr. Brent Seales pioneers virtual unwrapping.",
-    description: (
-      <>
-        <div className="max-w-3xl mb-4">
-          Using X-ray tomography and computer vision, a team led by Dr. Brent
-          Seales at the University of Kentucky reads the En-Gedi scroll without
-          opening it. Discovered in the Dead Sea region of Israel, the scroll is
-          found to contain text from the book of Leviticus.
-        </div>
-        <div className="max-w-3xl mb-8">
-          Virtual unwrapping has since emerged as a growing field with multiple
-          successes. Their work went on to show the elusive carbon ink of the
-          Herculaneum scrolls can also be detected using X-ray tomography,
-          laying the foundation for Vesuvius Challenge.
-        </div>
-        <video
-          // autoPlay
-          playsInline
-          loop
-          muted
-          className="md:mb-8 mb-4 rounded-lg md:h-80 h-full md:w-auto w-full aspect-[4/3] sepia-[.8] inline-block mr-4 object-cover"
-          poster="/img/landing/engedi5.webp"
-          ref={unrollVideo}
-        >
-          <source src="/img/landing/engedi5.webm" type="video/webm" />
-        </video>
-        {inlineImage("/img/landing/brent1.webp")}
-      </>
-    ),
-    background: "/img/landing/story3.webp",
-  },
-  {
-    date: "2023 AD",
-    text: "A remarkable breakthrough.",
-    description: (
-      <>
-        <div className="max-w-3xl mb-8">
-          Vesuvius Challenge was launched in March 2023 to bring the world
-          together to read the Herculaneum scrolls. Along with smaller progress
-          prizes, a Grand Prize was issued for the first team to recover 4
-          passages of 140 characters from a Herculaneum scroll.
-        </div>
-        <div className="max-w-3xl mb-8">
-          Following a year of remarkable progress,{" "}
-          <a href="grandprize">the prize was claimed</a>. After 275 years, the
-          ancient puzzle of the Herculaneum Papyri has been cracked open. But
-          the quest to uncover the secrets of the scrolls is just beginning.
-        </div>
-        <div className="flex overflow-hidden rounded-lg md:mb-8 mb-4 h-96 relative bg-black">
-          <img
-            src="/img/landing/scroll-full-min.webp"
-            className="pan-horizontal max-w-none"
-          />
-        </div>
-      </>
-    ),
-    background: "/img/landing/story5.webp",
-  },
-  {
-    date: "2024 AD",
-    text: "New frontiers.",
-    description: (
-      <>
-        <div className="max-w-3xl mb-8">
-          <p>
-            A widespread community effort builds on the success of the first scroll,
-            automating and refining the components of the virtual unwrapping pipeline.
-            Efforts to scan and read multiple scrolls are underway.
-            New text is revealed from another scroll.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <img
-              src="/img/landing/patches.webp"
-              alt="Community Effort 1"
-              className="w-full sm:w-1/2 object-cover rounded-lg"
-            />
-            <img
-              src="/img/landing/scroll5.webp"
-              alt="Community Effort 2"
-              className="w-full sm:w-1/2 object-cover rounded-lg"
-            />
-          </div>
-        </div>
-      </>
-    ),
-    background: "/img/landing/story6.webp",
-  },
-];
+// const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
+//   {
+//     date: "79 AD",
+//     text: "Mount Vesuvius erupts.",
+//     anchor: "vesuvius",
+//     description: (
+//       <>
+//         <div className="mb-4 max-w-3xl">
+//           In Herculaneum, twenty meters of hot mud and ash bury an enormous
+//           villa once owned by the father-in-law of Julius Caesar. Inside, there
+//           is a vast library of papyrus scrolls.
+//         </div>
+//         <div className="mb-8 max-w-3xl">
+//           The scrolls are carbonized by the heat of the volcanic debris. But
+//           they are also preserved. For centuries, as virtually every ancient
+//           text exposed to the air decays and disappears, the library of the
+//           Villa of the Papyri waits underground, intact.
+//         </div>
+//         {inlineImage("/img/landing/rocio-espin-pinar-villa-papyri-small.webp")}
+//       </>
+//     ),
+//     background: "/img/landing/story1.webp",
+//   },
+//   {
+//     date: "1750 AD",
+//     text: "A farmer discovers the buried villa.",
+//     description: (
+//       <>
+//         <div className="max-w-3xl mb-8">
+//           While digging a well, an Italian farmworker encounters a marble
+//           pavement. Excavations unearth beautiful statues and frescoes – and
+//           hundreds of scrolls. Carbonized and ashen, they are extremely fragile.
+//           But the temptation to open them is great; if read, they would
+//           significantly increase the corpus of literature we have from
+//           antiquity.
+//         </div>
+//         <div className="max-w-3xl mb-8">
+//           Early attempts to open the scrolls unfortunately destroy many of them.
+//           A few are painstakingly unrolled by a monk over several decades, and
+//           they are found to contain philosophical texts written in Greek. More
+//           than six hundred remain unopened and unreadable.
+//         </div>
+//         {inlineImage("/img/landing/scroll.webp")}
+//         {inlineImage("/img/landing/herc-materials.webp")}
+//       </>
+//     ),
+//     background: "/img/landing/story2.webp",
+//   },
+//   {
+//     date: "2015 AD",
+//     text: "Dr. Brent Seales pioneers virtual unwrapping.",
+//     description: (
+//       <>
+//         <div className="max-w-3xl mb-4">
+//           Using X-ray tomography and computer vision, a team led by Dr. Brent
+//           Seales at the University of Kentucky reads the En-Gedi scroll without
+//           opening it. Discovered in the Dead Sea region of Israel, the scroll is
+//           found to contain text from the book of Leviticus.
+//         </div>
+//         <div className="max-w-3xl mb-8">
+//           Virtual unwrapping has since emerged as a growing field with multiple
+//           successes. Their work went on to show the elusive carbon ink of the
+//           Herculaneum scrolls can also be detected using X-ray tomography,
+//           laying the foundation for Vesuvius Challenge.
+//         </div>
+//         <video
+//           // autoPlay
+//           playsInline
+//           loop
+//           muted
+//           className="md:mb-8 mb-4 rounded-lg md:h-80 h-full md:w-auto w-full aspect-[4/3] sepia-[.8] inline-block mr-4 object-cover"
+//           poster="/img/landing/engedi5.webp"
+//           ref={unrollVideo}
+//         >
+//           <source src="/img/landing/engedi5.webm" type="video/webm" />
+//         </video>
+//         {inlineImage("/img/landing/brent1.webp")}
+//       </>
+//     ),
+//     background: "/img/landing/story3.webp",
+//   },
+//   {
+//     date: "2023 AD",
+//     text: "A remarkable breakthrough.",
+//     description: (
+//       <>
+//         <div className="max-w-3xl mb-8">
+//           Vesuvius Challenge was launched in March 2023 to bring the world
+//           together to read the Herculaneum scrolls. Along with smaller progress
+//           prizes, a Grand Prize was issued for the first team to recover 4
+//           passages of 140 characters from a Herculaneum scroll.
+//         </div>
+//         <div className="max-w-3xl mb-8">
+//           Following a year of remarkable progress,{" "}
+//           <a href="grandprize">the prize was claimed</a>. After 275 years, the
+//           ancient puzzle of the Herculaneum Papyri has been cracked open. But
+//           the quest to uncover the secrets of the scrolls is just beginning.
+//         </div>
+//         <div className="flex overflow-hidden rounded-lg md:mb-8 mb-4 h-96 relative bg-black">
+//           <img
+//             src="/img/landing/scroll-full-min.webp"
+//             className="pan-horizontal max-w-none"
+//           />
+//         </div>
+//       </>
+//     ),
+//     background: "/img/landing/story5.webp",
+//   },
+//   {
+//     date: "2024 AD",
+//     text: "New frontiers.",
+//     description: (
+//       <>
+//         <div className="max-w-3xl mb-8">
+//           <p>
+//             A widespread community effort builds on the success of the first scroll,
+//             automating and refining the components of the virtual unwrapping pipeline.
+//             Efforts to scan and read multiple scrolls are underway.
+//             New text is revealed from another scroll.
+//           </p>
+//           <div className="flex flex-col sm:flex-row gap-4 mt-4">
+//             <img
+//               src="/img/landing/patches.webp"
+//               alt="Community Effort 1"
+//               className="w-full sm:w-1/2 object-cover rounded-lg"
+//             />
+//             <img
+//               src="/img/landing/scroll5.webp"
+//               alt="Community Effort 2"
+//               className="w-full sm:w-1/2 object-cover rounded-lg"
+//             />
+//           </div>
+//         </div>
+//       </>
+//     ),
+//     background: "/img/landing/story6.webp",
+//   },
+// ];
 
 const prizes = [
   {
@@ -649,71 +649,6 @@ const team = {
       title: "Founding Sponsor",
       href: "https://dcgross.com/",
     },
-    {
-      name: "Stephen Parsons",
-      title: "Project Lead",
-      href: "https://www2.cs.uky.edu/dri/stephen-parsons/",
-    },
-    {
-      name: "Sean Johnson",
-      title: "Technical Community Manager",
-      href: "https://github.com/bruniss",
-    },
-    {
-      name: "Julian Schilliger",
-      title: "Software Engineer",
-      href: "https://www.linkedin.com/in/julian-schilliger-963b21294/",
-    },
-    {
-      name: "Giorgio Angelotti",
-      title: "ML Consultant & Research Scientist, PhD",
-      href: "https://thegiorgio.org/",
-    },
-    {
-      name: "Youssef Nader",
-      title: "Machine Learning Researcher",
-      href: "https://youssefnader.com/",
-    },
-    {
-      name: "Elian Rafael Dal Prá",
-      title: "ML Intern & Annotation Specialist",
-      href: "https://twitter.com/elianrafaeldp",
-    },
-    {
-      name: "Johannes Rudolph",
-      title: "Platform Engineer",
-      href: "https://blog.virtual-void.net/",
-    },
-    {
-      name: "David Josey",
-      title: "ML Annotation Team Lead",
-      href: "https://www.linkedin.com/in/davidsjosey/",
-    },
-    {
-      name: "Eric Thvedt",
-      title: "Annotation Specialist",
-      href: "https://www.linkedin.com/in/eric-thvedt/",
-    },
-    {
-      name: "Kendra Brown",
-      title: "Annotation Specialist",
-      href: "https://darthkendraresearch.wordpress.com/",
-    },
-    {
-      name: "Konrad Rosenberg",
-      title: "Annotation Specialist",
-      href: "https://twitter.com/germanicgems",
-    },
-    {
-      name: "Sarah Morejohn",
-      title: "Annotation Specialist",
-      href: "https://www.linkedin.com/in/sarah-morejohn-1140b049/",
-    },
-    {
-      name: "Techjays",
-      title: "Annotation Services",
-      href: "https://www.techjays.com/",
-    },
   ],
   educe: [
     {
@@ -726,31 +661,6 @@ const team = {
       title: "Research Manager",
       href: "https://www2.cs.uky.edu/dri/seth-parker/",
     },
-    {
-      name: "Christy Chapman",
-      title: "Research & Partnership Manager",
-      href: "https://educelab.engr.uky.edu/christy-chapman",
-    },
-    {
-      name: "Mami Hayashida",
-      title: "Research Staff",
-      href: "https://www.ccs.uky.edu/about-ccs/staff-directory/mami-hayashida/",
-    },
-    {
-      name: "James Brusuelas",
-      title: "Associate Professor of Classics",
-      href: "https://mcl.as.uky.edu/users/jbr454",
-    },
-    {
-      name: "Beth Lutin",
-      title: "College Business Analyst",
-      href: "https://www.engr.uky.edu/directory/lutin-elizabeth",
-    },
-    {
-      name: "Roger Macfarlane",
-      title: "Professor of Classical Studies",
-      href: "https://hum.byu.edu/directory/roger-macfarlane",
-    },
   ],
   alumni: [
     {
@@ -762,56 +672,6 @@ const team = {
       name: "Ben Kyles",
       title: "Segmentation Team Lead",
       href: "https://twitter.com/ben_kyles",
-    },
-    {
-      name: "Adrionna Fey",
-      title: "Annotation Specialist",
-      href: "https://twitter.com/Meadowsnax1",
-    },
-    {
-      name: "Cooper Miller",
-      title: "Annotation Specialist",
-      href: "https://kcm.sh/",
-    },
-    {
-      name: "Raymond Gasper",
-      title: "Annotation Specialist",
-      href: "https://www.linkedin.com/in/raymond-james-gasper/",
-    },
-    {
-      name: "Sergei Pnev",
-      title: "Annotation Specialist",
-      href: "www.linkedin.com/in/sergey-pnev",
-    },
-    {
-      name: "Daniel Havíř",
-      title: "Machine Learning",
-      href: "https://danielhavir.com/",
-    },
-    {
-      name: "Ian Janicki",
-      title: "Design",
-      href: "https://ianjanicki.com/",
-    },
-    {
-      name: "Chris Frangione",
-      title: "Prizes",
-      href: "https://www.linkedin.com/in/chrisfrangione/",
-    },
-    {
-      name: "Garrett Ryan",
-      title: "Classics",
-      href: "https://toldinstone.com/",
-    },
-    {
-      name: "Dejan Gotić",
-      title: "3D Animator",
-      href: "https://www.instagram.com/dejangotic_constructology/",
-    },
-    {
-      name: "Jonny Hyman",
-      title: "2D Animator",
-      href: "https://jonnyhyman.com/",
     },
   ],
   papyrology: [
@@ -827,39 +687,6 @@ const team = {
         "Postdoctoral Fellow in Papyrology, University of Naples Federico II",
       href: "https://unina.academia.edu/MDAngelo",
     },
-    {
-      name: "Kilian Fleischer",
-      title:
-        "Research Director and Papyrologist, University of Tübingen and CNR",
-      href: "https://www.klassphil.uni-wuerzburg.de/team/pd-dr-kilian-fleischer/",
-    },
-    {
-      name: "Alessia Lavorante",
-      title:
-        "Postdoctoral Fellow in Papyrology, University of Naples Federico II",
-      href: "https://unina.academia.edu/AlessiaLavorante",
-    },
-    {
-      name: "Michael McOsker",
-      title: "Researcher, University College London",
-      href: "https://profiles.ucl.ac.uk/97051-michael-mcosker",
-    },
-    {
-      name: "Maria Chiara Robustelli",
-      title: "Postdoctoral Fellow in Papyrology, University of Naples Federico II",
-      href: "https://unina.academia.edu/mrobustelli",
-    },
-    {
-      name: "Claudio Vergara",
-      title:
-        "Postdoctoral Fellow in Papyrology, University of Naples Federico II",
-      href: "https://unina.academia.edu/ClaudioVergara",
-    },
-    {
-      name: "Rossella Villa",
-      title: "Research Assistant in Papyrology, University of Salerno",
-      href: "https://salerno.academia.edu/RossellaVilla",
-    },
   ],
   papyrologyAdvisors: [
     {
@@ -873,30 +700,6 @@ const team = {
         "Professor of Papyrology, l'Università della Campania «L. Vanvitelli»",
       href: "https://www.facebook.com/GianlucaDelMastroSindaco",
     },
-    {
-      name: "Robert Fowler",
-      title:
-        "Fellow of the British Academy;  Professor Emeritus of Classics, Bristol University",
-      href: "https://www.thebritishacademy.ac.uk/fellows/robert-fowler-FBA/",
-    },
-    {
-      name: "Richard Janko",
-      title:
-        "Fellow of the American Academy of Arts and Sciences; Professor of Classics, University of Michigan",
-      href: "https://lsa.umich.edu/classics/people/departmental-faculty/rjanko.html",
-    },
-    {
-      name: "Federica Nicolardi",
-      title:
-        "Assistant Professor of Papyrology, University of Naples Federico II",
-      href: "https://www.docenti.unina.it/federica.nicolardi",
-    },
-    {
-      name: "Tobias Reinhardt",
-      title:
-        "Corpus Christi Professor of the Latin Language and Literature, Oxford",
-      href: "https://www.classics.ox.ac.uk/people/professor-tobias-reinhardt",
-    },
   ],
 };
 
@@ -909,26 +712,6 @@ const partners = [
     icon: "/img/landing/institute.svg",
     href: "https://www.institutdefrance.fr/en/home/",
   },
-  {
-    icon: "/img/landing/diamond.svg",
-    href: "https://www.diamond.ac.uk/",
-  },
-  {
-    icon: "/img/landing/biblioteca.svg",
-    href: "https://www.bnnonline.it/",
-  },
-  {
-    icon: "/img/landing/getty.svg",
-    href: "https://www.getty.edu/",
-  },
-  {
-    icon: "/img/landing/kaggle.svg",
-    href: "https://www.kaggle.com/",
-  },
-  {
-    icon: "/img/landing/panua.svg",
-    href: "https://panua.ch/",
-  },
 ];
 
 const educelabFunders = [
@@ -940,29 +723,24 @@ const educelabFunders = [
     name: "The National Endowment for the Humanities",
     href: "https://www.neh.gov/",
   },
+];
+
+const tablets = [
   {
-    name: "The Andrew W. Mellon Foundation",
-    href: "https://www.mellon.org/",
+    title: "Aššur-nāda",
+    desc: "a headstrong son navigating the pressures of trade in Kanesh."
   },
   {
-    name: "The Digital Restoration Initiative",
-    href: "https://www2.cs.uky.edu/dri/",
+    title: "Aššur-idi",
+    desc: "his aging father in Aššur, torn between temple duties and family expectations."
   },
   {
-    name: "The Arts & Humanities Research Council",
-    href: "https://www.ukri.org/councils/ahrc/",
+    title: "Ištar-lamassi",
+    desc: "a daughter and diplomatic bridge, married into another merchant dynasty."
   },
   {
-    name: "The Lighthouse Beacon Foundation — Stanley and Karen Pigman",
-    href: undefined,
-  },
-  {
-    name: "John & Karen Maxwell",
-    href: undefined,
-  },
-  {
-    name: "Lee & Stacie Marksbury",
-    href: undefined,
+    title: "Puzur-Ištar",
+    desc: "her husband, carrying his father's legacy into a new generation of trade."
   },
 ];
 
@@ -1481,18 +1259,6 @@ const BuildingBlock = ({ title, description, showDividerMobile = true, showDivid
   </div>
 );
 
-const App = () => {
-  const tabData = [{ label: "Tab 1" }, { label: "Tab 2" }, { label: "Tab 3" }];
-
-  return (
-    <div className="App">
-      <h1 className="geeks">GeeksforGeeks</h1>
-      <h1>React Tabs Example</h1>
-      <Tabs tabs={tabData} />
-    </div>
-  );
-};
-
 export function Landing() {
   useBrokenLinks().collectAnchor("sponsors");
   useBrokenLinks().collectAnchor("educelab-funders");
@@ -1532,30 +1298,26 @@ export function Landing() {
 
   useEffect(() => {
     autoPlay(heroVideo);
-    autoPlay(unrollVideo);
+    // autoPlay(unrollVideo);
     // autoPlay(mlVideo);
     // autoPlay(xrayVideo);
   }, []);
 
   return (
     <>
-      <div className="absolute inset-0 z-0 md:block hidden">
-        {stories({ unrollVideo }).map((s, index) => (
-          <StoryBackground story={s} key={s.date} index={index} />
-        ))}
-      </div>
       <div className="text-white ">
         <div className="z-20 relative">
           {/* Hero */}
           <section>
             <div className="container mx-auto z-20 relative mb-12">
               <div className="md:pt-20 pt-8 mb-4">
-                <h1 className="text-4xl md:text-7xl font-black !mb-4 tracking-tighter mix-blend-exclusion !leading-[90%] transition-opacity">
-                  <div className="max-w-3xl">
-                    Resurrect an ancient library from the ashes of a volcano.
+                <h1 className="text-4xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[90%] transition-opacity">
+                  <div className="max-w-3xl text-5xl">
+                    Unearth the voices of ancient merchants.
+                    Translate the archives of Mesopotamia.
                   </div>
                   <span
-                    className="text-3xl md:text-6xl drop-shadow-lg"
+                    className="text-3xl md:text-5xl drop-shadow-lg"
                     style={{
                       background:
                         "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #F5653F 0%, #D53A17 100%)",
@@ -1574,14 +1336,8 @@ export function Landing() {
                 </h1>
                 <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight">
                   <span className="opacity-80 md:opacity-60">
-                    Vesuvius Challenge is a machine learning, computer vision,
-                    and geometry competition that is{" "}
-                  </span>
-                  <span className="opacity-100">
-                    <a href="grandprize">reading</a>&nbsp;
-                  </span>
-                  <span className="opacity-80 md:opacity-60">
-                    the carbonized Herculaneum scrolls & has awarded $1,500,000 in prizes.
+                    The Deep Past Challenge is a machine learning and language translation competition unlocking the 4,000-year-old trade records of Assyrian merchants.
+                    Thousands of cuneiform texts remain untranslated—help us bring their stories to light.
                   </span>
                   <br />
                   <br />
@@ -1595,134 +1351,11 @@ export function Landing() {
                   <span className="opacity-80 md:opacity-60">
                     to win prizes and make history.
                   </span>
-                  <span className="opacity-80 md:opacity-60">&nbsp;Also:</span>
-                  <span className="opacity-100">
-                    <a href="jobs">&nbsp;we're hiring!</a>
-                  </span>
                 </p>
               </div>
 
               <div className="grid items-start max-w-8xl">
                 <LatestPosts />
-
-                <div className="flex-wrap z-10 pt-1">
-                  <div className="grid grid-cols-1">
-                    <ChallengeBox
-                      title="Open Problem: Representation"
-                      linkText="Scan the Surface"
-                      href="/unwrapping"
-                      imageSrc={
-                        <BeforeAfter
-                          beforeImage="/img/data/rep_raw_10037.png"
-                          afterImage="/img/data/rep_norms_10037.png"
-                        />
-                      }
-                      imagePosition="right"
-                    >
-                      <p className="">
-                        Carbonized and crushed under pyroclastic flow and
-                        debris, the scrolls are in rough shape. Tracing the 3D
-                        sheets through these damaged scrolls is nearly
-                        impossible in the raw scan data. More structured
-                        representations, like those obtained with semantic
-                        segmentation, simplify downstream tasks significantly.
-                      </p>
-                      <p className=" pt-16">
-                        Related skills: image annotation, computer vision,
-                        machine learning, medical imaging
-                      </p>
-                    </ChallengeBox>
-
-                    <ChallengeBox
-                      title="Open Problem: Geometric Reconstruction"
-                      linkText="Chart the Path"
-                      href="/segmentation"
-                      imageSrc={
-                        <BeforeAfter
-                          beforeImage="/img/data/raw_pred.png"
-                          afterImage="/img/data/patches.png"
-                        />
-                      }
-                      imagePosition="right"
-                    >
-                      <p className="pb-5">
-                        A better image representation alone does not an unrolled
-                        scroll make. We need methods to better map the surfaces,
-                        stitch them where necessary, and extract them into
-                        readable sheets of papyrus.
-
-                        For a primer on current autosegmentation methods and their progress, read the <a href="/unwrapping"> Virtual Unwrapping document.</a>
-                      </p>
-                      <p className=" pt-16">
-                        Related skills: geometry processing, computer vision,
-                        machine learning, optimization
-                      </p>
-                    </ChallengeBox>
-
-                    <ChallengeBox
-                      title="Open Problem: Ink Detection"
-                      linkText="Find a Letter"
-                      href="/tutorial5"
-                      imageSrc={
-                        <BeforeAfter
-                          beforeImage="/img/ink/51002_crop/32.jpg"
-                          afterImage="/img/ink/51002_crop/prediction.jpg"
-                        />
-                      }
-                      imagePosition="right"
-                    >
-                      <p className="">
-                        We've so far recovered text from just two of our five
-                        scrolls. Is the ink fundamentally different in others?
-                        Is the papyrus surface? We're not yet sure. We are
-                        certain though that if it ever existed, it can be
-                        detected.
-                      </p>
-                      <p className="pt-16">
-                        Related skills: image annotation, computer vision,
-                        machine learning, pattern recognition
-                      </p>
-                    </ChallengeBox>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="mt-2 pt-2 pb-0 relative rounded-2xl border-solid text-white border border-[#FFFFFF20] bg-[#131114bf]"
-                style={{
-                  boxShadow:
-                    "0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.09), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.13), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.16), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.19), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.23), 0px 100px 80px 0px rgba(0, 0, 0, 0.32)",
-                }}
-              >
-                <h3 className="text-2xl text-white pt-2 pb-3 text-center">
-                  What We're Building Towards
-                </h3>
-
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5 px-6 pb-3">
-                  <BuildingBlock
-                    title="Accurate Surface Representation"
-                    description="We lack the accuracy to make the meshing step as simple as it could be."
-                    showDividerMobile={true}
-                    showDividerDesktop={true}
-                  />
-                  <BuildingBlock
-                    title="Generalizable Ink Detection"
-                    description="Ink has been found in two scrolls, but remains elusive in our other scrolls."
-                    showDividerMobile={false}
-                    showDividerDesktop={true}
-                  />
-                  <BuildingBlock
-                    title="High Quality Annotations"
-                    description="We need an abundance of high-quality annotations."
-                    showDividerMobile={true}
-                    showDividerDesktop={true}
-                  />
-                  <BuildingBlock
-                    title="Robust Meshing"
-                    description="Methods that function where Surface Representation is unreliable are needed."
-                    showDividerMobile={false}
-                    showDividerDesktop={false}
-                  />
-                </div>
               </div>
 
               <div className="pt-8 mb-4">
@@ -1758,35 +1391,54 @@ export function Landing() {
             </div>
           </section>
           {/* Stories */}
-          {stories({ unrollVideo }).map((s, index) => (
+          {/* {stories({ unrollVideo }).map((s, index) => (
             <Story story={s} key={s.date} index={index} />
-          ))}
+          ))} */}
           {/* Prize */}
           <section className="mb-24 md:mb-36">
             <div className="container mx-auto z-30 relative">
               <div className="flex flex-col py-8 md:py-16 ">
-                <h1 className="text-3xl md:text-6xl font-black !mb-2 leading-none tracking-tighter">
-                  <span
-                    className="font-black leading-none tracking-tighter mb-0"
-                    style={{
-                      background:
-                        "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #F5653F 0%, #D53A17 100%)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                      backgroundClip: "text",
-                      textFillColor: "transparent",
-                    }}
-                  >
-                    {new Date().getFullYear()} AD
-                  </span>
+                <h1 className="text-3xl md:text-6xl font-black !mb-5 leading-none tracking-tighter mb">
+                  🏺 Our Story
                   <br />
-                  The Challenge Continues
                 </h1>
                 <p className="max-w-xl md:text-xl text-lg font-medium !mb-8 md:w-full w-4/5  !leading-[110%] tracking-tight opacity-60">
-                  Vesuvius Challenge moves onto its next stage of reading multiple entire scrolls.
-                  Read more about the prizes below, and on how
-                  they contribute towards the{" "}
-                  <a href="master_plan">The Master Plan</a>.
+                  <span className="font-bold">
+                    4000 years ago, the world's first commercial civilization was thriving.
+                    Now, it's time to let their voices speak again.
+                  </span>
+                  <br/>
+                  <br/>
+                  In the early second millennium BCE, long before Rome or Athens, merchants from the city of Aššur built a vast trade network stretching across Mesopotamia and Anatolia. They left behind over 25,000 clay tablets at the site of ancient Kanesh—contracts, letters, loans, receipts—each etched in cuneiform, each bearing witness to a living world of commerce, conflict, and kinship.
+                  <br/>
+                  <br/>
+                  These are not myths. These are ledgers. Courtroom testimonies. Heated arguments between fathers and sons. Tender messages between husbands and wives. Each tablet records a moment in the life of real people:
+                  
+                  <ul className="list-disc pl-6 mt-5">
+                    {tablets.map((tablet) => (
+                        <li className="mb-3" key={tablet.title}>
+                          <span className="font-bold">{tablet.title}</span>, {tablet.desc}
+                        </li>
+                    ))}
+                  </ul>
+                  Their world was connected by caravans and sealed with trust—but also plagued by debt, distance, and disputes. Through their tablets, we glimpse negotiations, betrayals, reconciliations, and even rebellion. One family's rift could destabilize an entire economic alliance.
+                  <br/>
+                  <br/>
+                  And yet… most of these voices remain unread.
+                  <br/>
+                  <br/>
+                  Only a fraction of the tablets have been translated. The vast majority lie untranslated in museum storerooms or digitized in unreadable formats—waiting. Not because they are unimportant, but because there are fewer than twenty people alive today who can translate them.
+                  <br/>
+                  <br/>
+                  That's where you come in.
+                  <br/>
+                  <br/>
+                  <span className="font-bold">The Deep Past Challenge</span> invites you to build machine translation systems that can unlock this archive. Every word you help translate brings us closer to understanding how ancient trade, law, family, and technology once intertwined.
+                  <br/>
+                  <br/>
+                  This isn't just a language task. It's the recovery of a lost world.
+                  <br/>
+                  Join us—<span className="font-bold">help history speak again.</span>
                 </p>
                 <div className="flex flex-col gap-3 max-w-7xl">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-6xl">
@@ -1796,33 +1448,6 @@ export function Landing() {
                         <Prize prize={p} key={i} />
                       ))}
                   </div>
-                </div>
-              </div>
-              <div className="pt-10 md:pt-20 max-w-3xl">
-                <h1 className="text-4xl md:text-7xl font-black !mb-2 leading-none tracking-tighter">
-                  Awarded Prizes
-                </h1>
-                <p className="max-w-xl md:text-xl text-lg font-medium !mb-8 md:w-full w-4/5  !leading-[110%] tracking-tight opacity-60">
-                  Incredible teams of engineers are helping us unlock these
-                  secrets, providing unprecedented access to scrolls that have
-                  not been read in two millennia. Learn more about their
-                  accomplishments.
-                </p>
-              </div>
-              <div className="flex flex-col gap-3 max-w-7xl">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 max-w-6xl">
-                  {prizes
-                    .filter((p) => p.winners && p.bannerImage)
-                    .map((p, i) => (
-                      <Prize prize={p} key={i} />
-                    ))}
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 max-w-6xl">
-                  {prizes
-                    .filter((p) => p.winners && !p.bannerImage)
-                    .map((p, i) => (
-                      <Prize prize={p} key={i} />
-                    ))}
                 </div>
               </div>
             </div>
