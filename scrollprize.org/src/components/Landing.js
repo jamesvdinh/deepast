@@ -1297,7 +1297,7 @@ export function Landing() {
   }, []);
 
   useEffect(() => {
-    autoPlay(heroVideo);
+    // autoPlay(heroVideo);
     // autoPlay(unrollVideo);
     // autoPlay(mlVideo);
     // autoPlay(xrayVideo);
@@ -1366,15 +1366,23 @@ export function Landing() {
                 </p>
               </div>
             </div>
-            <div
-              className="absolute inset-0 h-[75vh] z-10"
+            {/* <div
+              className="absolute inset-0 h-[90vh] z-10"
               style={{
                 background:
                   "linear-gradient(90deg, rgba(28, 26, 29, 0.8) 20%, rgba(28, 26, 29, 0) 80%),linear-gradient(0deg, #1C1A1D 1%, rgba(28, 26, 29, 0) 30%)",
               }}
-            />
-            <div className="absolute inset-0 h-[75vh] z-0">
-              <video
+            /> */}
+            <div className="absolute inset-0 h-[75vh] z-0"
+              style={{
+                backgroundImage: `
+                  linear-gradient(90deg, rgba(28, 26, 29, 0.8) 20%, rgba(28, 26, 29, 0) 80%),
+                  linear-gradient(0deg, #1C1A1D 1%, rgba(28, 26, 29, 0) 30%),
+                  url('./img/landing/tower_of_babel.png')
+                `,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',}}>
+              {/*<video
                 // autoPlay
                 playsInline
                 loop
@@ -1388,6 +1396,7 @@ export function Landing() {
                   type="video/webm"
                 />
               </video>
+              */}
             </div>
           </section>
           {/* Stories */}
