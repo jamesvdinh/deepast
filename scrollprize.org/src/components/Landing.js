@@ -1519,7 +1519,7 @@ export function Landing() {
                 <div className="flex flex-wrap">
                   <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
                     <h3 className="text-3xl font-black tracking-tighter">
-                      Vesuvius Challenge Team
+                      Deep Past Challenge Team
                     </h3>
                     {team.challenge.map((t, i) => (
                       <Link link={t} key={i} />

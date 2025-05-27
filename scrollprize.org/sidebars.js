@@ -63,7 +63,7 @@ const sidebars = {
     {
       type: 'link',
       label: 'Discord',
-      href: 'https://discord.gg/V4fJhvtaQn',
+      href: '/deepast/',
     }
     ],
   archiveSidebar: [
