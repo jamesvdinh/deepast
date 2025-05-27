@@ -28,10 +28,10 @@ const inlineImage = (src) => (
 //           text exposed to the air decays and disappears, the library of the
 //           Villa of the Papyri waits underground, intact.
 //         </div>
-//         {inlineImage("/img/landing/rocio-espin-pinar-villa-papyri-small.webp")}
+//         {inlineImage("./img/landing/rocio-espin-pinar-villa-papyri-small.webp")}
 //       </>
 //     ),
-//     background: "/img/landing/story1.webp",
+//     background: "./img/landing/story1.webp",
 //   },
 //   {
 //     date: "1750 AD",
@@ -52,11 +52,11 @@ const inlineImage = (src) => (
 //           they are found to contain philosophical texts written in Greek. More
 //           than six hundred remain unopened and unreadable.
 //         </div>
-//         {inlineImage("/img/landing/scroll.webp")}
-//         {inlineImage("/img/landing/herc-materials.webp")}
+//         {inlineImage("./img/landing/scroll.webp")}
+//         {inlineImage("./img/landing/herc-materials.webp")}
 //       </>
 //     ),
-//     background: "/img/landing/story2.webp",
+//     background: "./img/landing/story2.webp",
 //   },
 //   {
 //     date: "2015 AD",
@@ -81,15 +81,15 @@ const inlineImage = (src) => (
 //           loop
 //           muted
 //           className="md:mb-8 mb-4 rounded-lg md:h-80 h-full md:w-auto w-full aspect-[4/3] sepia-[.8] inline-block mr-4 object-cover"
-//           poster="/img/landing/engedi5.webp"
+//           poster="./img/landing/engedi5.webp"
 //           ref={unrollVideo}
 //         >
-//           <source src="/img/landing/engedi5.webm" type="video/webm" />
+//           <source src="./img/landing/engedi5.webm" type="video/webm" />
 //         </video>
-//         {inlineImage("/img/landing/brent1.webp")}
+//         {inlineImage("./img/landing/brent1.webp")}
 //       </>
 //     ),
-//     background: "/img/landing/story3.webp",
+//     background: "./img/landing/story3.webp",
 //   },
 //   {
 //     date: "2023 AD",
@@ -110,13 +110,13 @@ const inlineImage = (src) => (
 //         </div>
 //         <div className="flex overflow-hidden rounded-lg md:mb-8 mb-4 h-96 relative bg-black">
 //           <img
-//             src="/img/landing/scroll-full-min.webp"
+//             src="./img/landing/scroll-full-min.webp"
 //             className="pan-horizontal max-w-none"
 //           />
 //         </div>
 //       </>
 //     ),
-//     background: "/img/landing/story5.webp",
+//     background: "./img/landing/story5.webp",
 //   },
 //   {
 //     date: "2024 AD",
@@ -132,12 +132,12 @@ const inlineImage = (src) => (
 //           </p>
 //           <div className="flex flex-col sm:flex-row gap-4 mt-4">
 //             <img
-//               src="/img/landing/patches.webp"
+//               src="./img/landing/patches.webp"
 //               alt="Community Effort 1"
 //               className="w-full sm:w-1/2 object-cover rounded-lg"
 //             />
 //             <img
-//               src="/img/landing/scroll5.webp"
+//               src="./img/landing/scroll5.webp"
 //               alt="Community Effort 2"
 //               className="w-full sm:w-1/2 object-cover rounded-lg"
 //             />
@@ -145,7 +145,7 @@ const inlineImage = (src) => (
 //         </div>
 //       </>
 //     ),
-//     background: "/img/landing/story6.webp",
+//     background: "./img/landing/story6.webp",
 //   },
 // ];
 
@@ -159,15 +159,15 @@ const prizes = [
     winners: [
       {
         name: "Marcel Roth",
-        image: "/img/landing/marcel.webp",
+        image: "./img/landing/marcel.webp",
       },
       {
         name: "Micha Nowak",
-        image: "/img/landing/micha.webp",
+        image: "./img/landing/micha.webp",
       },
     ],
     won: true,
-    bannerImage: "/img/landing/scroll5-title-boxes.webp",
+    bannerImage: "./img/landing/scroll5-title-boxes.webp",
   },
   {
     title: "First Automated Segmentation Prize",
@@ -178,20 +178,20 @@ const prizes = [
     winners: [
       // {
       //   name: "Paul Henderson",
-      //   image: "/img/landing/paul.webp",
+      //   image: "./img/landing/paul.webp",
       // },
       // {
       //   name: "Hendrik Schilling",
-      //   image: "/img/landing/hendrik.webp",
+      //   image: "./img/landing/hendrik.webp",
       // },
       {
         name: "Sean Johnson",
-        image: "/img/landing/sean.webp",
+        image: "./img/landing/sean.webp",
       },
     ],
     winnersLabel: "3 Winners",
     won: true,
-    bannerImage: "/img/landing/patches.webp",
+    bannerImage: "./img/landing/patches.webp",
   },
   {
     title: "2023 Grand Prize",
@@ -202,18 +202,18 @@ const prizes = [
     winners: [
       {
         name: "Youssef Nader",
-        image: "/img/landing/youssef.webp",
+        image: "./img/landing/youssef.webp",
       },
       {
         name: "Luke Farritor",
-        image: "/img/landing/luke.webp",
+        image: "./img/landing/luke.webp",
       },
       {
         name: "Julian Schilliger",
-        image: "/img/landing/julian.webp",
+        image: "./img/landing/julian.webp",
       },
     ],
-    bannerImage: "/img/landing/grand-prize-preview.webp",
+    bannerImage: "./img/landing/grand-prize-preview.webp",
     href: "/grandprize",
   },
   {
@@ -224,18 +224,18 @@ const prizes = [
     winners: [
       {
         name: "Luke Farritor",
-        image: "/img/landing/luke.webp",
+        image: "./img/landing/luke.webp",
       },
       {
         name: "Youssef Nader",
-        image: "/img/landing/youssef.webp",
+        image: "./img/landing/youssef.webp",
       },
       {
         name: "Casey Handmer",
-        image: "/img/landing/casey.webp",
+        image: "./img/landing/casey.webp",
       },
     ],
-    // bannerImage: "/img/landing/first-letters.webp",
+    // bannerImage: "./img/landing/first-letters.webp",
     href: "/firstletters",
   },
   {
@@ -247,15 +247,15 @@ const prizes = [
     winners: [
       {
         name: "Giorgio Angelotti",
-        image: "/img/landing/giorgio.webp",
+        image: "./img/landing/giorgio.webp",
       },
       {
         name: "Yao Hsiao",
-        image: "/img/landing/yao.webp",
+        image: "./img/landing/yao.webp",
       },
       {
         name: "Brett Olsen",
-        image: "/img/landing/brett.webp",
+        image: "./img/landing/brett.webp",
       },
     ],
     won: true,
@@ -270,19 +270,19 @@ const prizes = [
     winners: [
       {
         name: "Yannick Kirchoff",
-        image: "/img/landing/yannick.webp",
+        image: "./img/landing/yannick.webp",
       },
       {
         name: "tattaka",
-        image: "/img/landing/tattaka.webp",
+        image: "./img/landing/tattaka.webp",
       },
       {
         name: "Ryan Chesler",
-        image: "/img/landing/ryan.webp",
+        image: "./img/landing/ryan.webp",
       },
       {
         name: "Felix Yu",
-        image: "/img/landing/felix.webp",
+        image: "./img/landing/felix.webp",
       },
     ],
     href: "/winners",
@@ -296,19 +296,19 @@ const prizes = [
   //   winners: [
   //     {
   //       name: "Ahron Wayne",
-  //       image: "/img/landing/ahron.webp",
+  //       image: "./img/landing/ahron.webp",
   //     },
   //     {
   //       name: "Julian Schilliger",
-  //       image: "/img/landing/julian.webp",
+  //       image: "./img/landing/julian.webp",
   //     },
   //     {
   //       name: "Santiago Pelufo",
-  //       image: "/img/landing/santiago.webp",
+  //       image: "./img/landing/santiago.webp",
   //     },
   //     {
   //       name: "Yao Hsiao",
-  //       image: "/img/landing/yao.webp",
+  //       image: "./img/landing/yao.webp",
   //     },
   //   ],
   //   won: true,
@@ -341,17 +341,17 @@ const prizes = [
 const creators = [
   {
     name: "Nat Friedman",
-    image: "/img/landing/nat.webp",
+    image: "./img/landing/nat.webp",
     href: "https://nat.org/",
   },
   {
     name: "Daniel Gross",
-    image: "/img/landing/daniel.webp",
+    image: "./img/landing/daniel.webp",
     href: "https://dcgross.com/",
   },
   {
     name: "Dr. Brent Seales",
-    image: "/img/landing/brent.webp",
+    image: "./img/landing/brent.webp",
     href: "https://educelab.engr.uky.edu/w-brent-seales",
   },
 ];
@@ -361,37 +361,37 @@ const sponsors = [
     name: "Musk Foundation",
     amount: 2084000,
     href: "https://www.muskfoundation.org/",
-    image: "/img/landing/musk.webp",
+    image: "./img/landing/musk.webp",
   },
   {
     name: "Alex Gerko",
     amount: 450000,
     href: "https://www.xtxmarkets.com/",
-    image: "/img/landing/gerko.webp",
+    image: "./img/landing/gerko.webp",
   },
   {
     name: "Joseph Jacks",
     amount: 250000,
     href: "https://twitter.com/JosephJacks_",
-    image: "/img/landing/Joseph Jacks.webp",
+    image: "./img/landing/Joseph Jacks.webp",
   },
   {
     name: "Nat Friedman",
     amount: 225000,
     href: "https://nat.org/",
-    image: "/img/landing/nat.webp",
+    image: "./img/landing/nat.webp",
   },
   {
     name: "Daniel Gross",
     amount: 225000,
     href: "https://dcgross.com/",
-    image: "/img/landing/daniel.webp",
+    image: "./img/landing/daniel.webp",
   },
   {
     name: "Matt Mullenweg",
     amount: 150000,
     href: "https://ma.tt/",
-    image: "/img/landing/Matt Mullenweg.webp",
+    image: "./img/landing/Matt Mullenweg.webp",
   },
   {
     name: "Emergent Ventures",
@@ -402,238 +402,238 @@ const sponsors = [
     name: "Matt Huang",
     amount: 50000,
     href: "https://twitter.com/matthuang",
-    image: "/img/landing/Matt Huang.webp",
+    image: "./img/landing/Matt Huang.webp",
   },
   {
     name: "John & Patrick Collison",
     amount: 125000,
     href: "https://stripe.com/",
-    image: ["/img/landing/collison1.webp", "/img/landing/collison2.webp"],
+    image: ["./img/landing/collison1.webp", "./img/landing/collison2.webp"],
   },
   {
     name: "Julia DeWahl & Dan Romero",
     amount: 100000,
     href: "https://twitter.com/natfriedman/status/1637959778558439425",
     image: [
-      "/img/landing/Julia DeWahl.webp",
-      "/img/landing/Dan Romero.webp",
+      "./img/landing/Julia DeWahl.webp",
+      "./img/landing/Dan Romero.webp",
     ],
   },
   {
     name: "Eugene Jhong",
     amount: 100000,
     href: "https://twitter.com/ejhong",
-    image: "/img/landing/Eugene Jhong.webp",
+    image: "./img/landing/Eugene Jhong.webp",
   },
   {
     name: "Anonymous",
     amount: 100000,
     href: "https://www.youtube.com/watch?v=JqrJ4wGid4Y",
-    image: "/img/landing/mystery.webp",
+    image: "./img/landing/mystery.webp",
   },
   {
     name: "Bastian Lehmann",
     amount: 75000,
     href: "https://twitter.com/Basti",
-    image: "/img/landing/Bastian Lehmann.webp",
+    image: "./img/landing/Bastian Lehmann.webp",
   },
   {
     name: "Tobi Lutke",
     amount: 75000,
     href: "https://twitter.com/tobi",
-    image: "/img/landing/Tobi Lutke.webp",
+    image: "./img/landing/Tobi Lutke.webp",
   },
   {
     name: "Guillermo Rauch",
     amount: 50000,
     href: "https://rauchg.com/",
-    image: "/img/landing/Guillermo Rauch.webp",
+    image: "./img/landing/Guillermo Rauch.webp",
   },
   {
     name: "Arthur Breitman",
     amount: 50000,
     href: "https://ex.rs/",
-    image: "/img/landing/Arthur Breitman.webp",
+    image: "./img/landing/Arthur Breitman.webp",
   },
   {
     name: "Anonymous",
     amount: 50000,
     href: "https://www.youtube.com/watch?v=JqrJ4wGid4Y",
-    image: "/img/landing/mystery.webp",
+    image: "./img/landing/mystery.webp",
   },
   {
     name: "Anonymous",
     amount: 50000,
     href: "https://www.youtube.com/watch?v=JqrJ4wGid4Y",
-    image: "/img/landing/mystery.webp",
+    image: "./img/landing/mystery.webp",
   },
   {
     name: "Aaron Levie",
     amount: 25000,
     href: "https://twitter.com/levie",
-    image: "/img/landing/Aaron Levie.webp",
+    image: "./img/landing/Aaron Levie.webp",
   },
   {
     name: "Akshay Kothari",
     amount: 25000,
     href: "https://twitter.com/akothari",
-    image: "/img/landing/Akshay Kothari.webp",
+    image: "./img/landing/Akshay Kothari.webp",
   },
   {
     name: "Alexa McLain",
     amount: 25000,
     href: "https://twitter.com/alexamclain",
-    image: "/img/landing/Alexa McLain.webp",
+    image: "./img/landing/Alexa McLain.webp",
   },
   {
     name: "Anjney Midha",
     amount: 25000,
     href: "https://twitter.com/AnjneyMidha",
-    image: "/img/landing/Anjney Midha.webp",
+    image: "./img/landing/Anjney Midha.webp",
   },
   {
     name: "franciscosan.org",
     amount: 25000,
     href: "https://franciscosan.org/",
-    image: "/img/landing/franciscosan.webp",
+    image: "./img/landing/franciscosan.webp",
   },
   {
     name: "John O'Brien",
     amount: 25000,
     href: "https://twitter.com/jobriensf",
-    image: "/img/landing/John O'Brien.webp",
+    image: "./img/landing/John O'Brien.webp",
   },
   {
     name: "Mark Cummins",
     amount: 25000,
     href: "https://twitter.com/mark_cummins",
-    image: "/img/landing/Mark Cummins.webp",
+    image: "./img/landing/Mark Cummins.webp",
   },
   {
     name: "Jamie Cox & Gary Wu",
     amount: 15000,
     href: "https://www.fluidstack.io/",
-    image: ["/img/landing/Jamie Cox.webp", "/img/landing/Gary Wu.webp"],
+    image: ["./img/landing/Jamie Cox.webp", "./img/landing/Gary Wu.webp"],
   },
   {
     name: "Mike Mignano",
     amount: 15000,
     href: "https://mignano.co/",
-    image: "/img/landing/Mike Mignano.webp",
+    image: "./img/landing/Mike Mignano.webp",
   },
   {
     name: "Aravind Srinivas",
     amount: 10000,
     href: "https://twitter.com/AravSrinivas",
-    image: "/img/landing/Aravind Srinivas.webp",
+    image: "./img/landing/Aravind Srinivas.webp",
   },
   {
     name: "Brandon Reeves",
     amount: 10000,
     href: "https://www.luxcapital.com/people/brandon-reeves",
-    image: "/img/landing/Brandon Reeves.webp",
+    image: "./img/landing/Brandon Reeves.webp",
   },
   {
     name: "Brandon Silverman",
     amount: 10000,
     href: "https://twitter.com/brandonsilverm",
-    image: "/img/landing/Brandon Silverman.webp",
+    image: "./img/landing/Brandon Silverman.webp",
   },
   {
     name: "Chet Corcos",
     amount: 10000,
     href: "https://chetcorcos.com",
-    image: "/img/landing/Chet Corcos.webp",
+    image: "./img/landing/Chet Corcos.webp",
   },
   {
     name: "Ivan Zhao",
     amount: 10000,
     href: "https://twitter.com/ivanhzhao",
-    image: "/img/landing/Ivan Zhao.webp",
+    image: "./img/landing/Ivan Zhao.webp",
   },
   {
     name: "Neil Parikh",
     amount: 10000,
     href: "https://www.neilparikh.com/",
-    image: "/img/landing/Neil Parikh.webp",
+    image: "./img/landing/Neil Parikh.webp",
   },
   {
     name: "Stephanie Sher",
     amount: 10000,
     href: "https://twitter.com/stephxsher",
-    image: "/img/landing/Stephanie Sher.webp",
+    image: "./img/landing/Stephanie Sher.webp",
   },
   {
     name: "Raymond Russell",
     amount: 10000,
     href: "https://twitter.com/raymondopolis",
-    image: "/img/landing/Raymond Russell.webp",
+    image: "./img/landing/Raymond Russell.webp",
   },
   {
     name: "Vignan Velivela",
     amount: 10000,
     href: "https://vignanv.com/",
-    image: "/img/landing/Vignan Velivela.webp",
+    image: "./img/landing/Vignan Velivela.webp",
   },
   {
     name: "Katsuya Noguchi",
     amount: 10000,
     href: "https://twitter.com/kn",
-    image: "/img/landing/Katsuya Noguchi.webp",
+    image: "./img/landing/Katsuya Noguchi.webp",
   },
   {
     name: "Shariq Hashme",
     amount: 10000,
     href: "https://shar.iq/",
-    image: "/img/landing/Shariq Hashme.webp",
+    image: "./img/landing/Shariq Hashme.webp",
   },
   {
     name: "Sahil Chaudhary",
     amount: 10000,
     href: "https://twitter.com/csahil28",
-    image: "/img/landing/Sahil Chaudhary.webp",
+    image: "./img/landing/Sahil Chaudhary.webp",
   },
   {
     name: "Maya & Taylor Blau",
     amount: 10000,
     href: "https://ttaylorr.com/",
-    image: ["/img/landing/Maya Blau.webp", "/img/landing/Taylor Blau.webp"],
+    image: ["./img/landing/Maya Blau.webp", "./img/landing/Taylor Blau.webp"],
   },
   {
     name: "Matias Nisenson",
     amount: 10000,
     href: "https://twitter.com/MatiasNisenson",
-    image: "/img/landing/Matias Nisenson.webp",
+    image: "./img/landing/Matias Nisenson.webp",
   },
   {
     name: "Mikhail Parakhin",
     amount: 10000,
     href: "https://twitter.com/mparakhin",
-    image: "/img/landing/Mikhail Parakhin.webp",
+    image: "./img/landing/Mikhail Parakhin.webp",
   },
   {
     name: "Alex Petkas",
     amount: 5000,
     href: "https://twitter.com/costofglory",
-    image: "/img/landing/Alex Petkas.webp",
+    image: "./img/landing/Alex Petkas.webp",
   },
   {
     name: "Amjad Masad",
     amount: 5000,
     href: "https://twitter.com/amasad",
-    image: "/img/landing/Amjad Masad.webp",
+    image: "./img/landing/Amjad Masad.webp",
   },
   {
     name: "Conor White-Sullivan",
     amount: 5000,
     href: "https://twitter.com/Conaw",
-    image: "/img/landing/Conor White-Sullivan.webp",
+    image: "./img/landing/Conor White-Sullivan.webp",
   },
   {
     name: "Will Fitzgerald",
     amount: 5000,
     href: "https://github.com/willf",
-    image: "/img/landing/Will Fitzgerald.webp",
+    image: "./img/landing/Will Fitzgerald.webp",
   },
 ];
 
@@ -705,11 +705,11 @@ const team = {
 
 const partners = [
   {
-    icon: "/img/landing/educe.svg",
+    icon: "./img/landing/educe.svg",
     href: "https://educelab.engr.uky.edu/",
   },
   {
-    icon: "/img/landing/institute.svg",
+    icon: "./img/landing/institute.svg",
     href: "https://www.institutdefrance.fr/en/home/",
   },
 ];
@@ -1077,8 +1077,8 @@ const AnimatedArrow = ({ text, button }) => (
     <img
       src={
         button
-          ? "/img/landing/arrow-right.svg"
-          : "/img/landing/arrow-right-white.svg"
+          ? "./img/landing/arrow-right.svg"
+          : "./img/landing/arrow-right-white.svg"
       }
     />
   </div>
@@ -1097,8 +1097,8 @@ const LargeAnimatedArrow = ({ text, button }) => (
     <img
       src={
         button
-          ? "/img/landing/arrow-right.svg"
-          : "/img/landing/arrow-right-white.svg"
+          ? "./img/landing/arrow-right.svg"
+          : "./img/landing/arrow-right-white.svg"
       }
     />
   </div>
@@ -1311,7 +1311,7 @@ export function Landing() {
           <section>
             <div className="container mx-auto z-20 relative mb-12">
               <div className="md:pt-20 pt-8 mb-4">
-                <h1 className="text-4xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[90%] transition-opacity">
+                <h1 className="text-5xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[90%] transition-opacity">
                   <div className="max-w-3xl text-6xl">
                     Unearth the voices of ancient merchants.
                     Translate the archives of Mesopotamia.
@@ -1379,7 +1379,7 @@ export function Landing() {
                 playsInline
                 loop
                 muted
-                poster="/img/landing/vesuvius.webp"
+                poster="./img/landing/vesuvius.webp"
                 className="w-full h-full object-cover object-[45%]"
                 ref={heroVideo}
               >

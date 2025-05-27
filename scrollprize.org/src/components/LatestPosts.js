@@ -68,7 +68,7 @@ const LatestPosts = () => {
         title="Get Started"
         href="/deepast/get_started"
         subtext="$1.5M+ already awarded"
-        useArrow={true}
+        // useArrow={true}
       />
     </div>
   );
