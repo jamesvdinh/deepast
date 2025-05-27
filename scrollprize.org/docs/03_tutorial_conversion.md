@@ -36,3 +36,5 @@ hide_table_of_contents: true
     content="https://scrollprize.org/img/social/opengraph.jpg"
   />
 </head>
+
+Text normalization and format conversion tools are available to standardize data across ORACC, CDLI, and other repositories. Jupyter notebooks handle harmonization of spelling, determinatives, and line formatting conventions.

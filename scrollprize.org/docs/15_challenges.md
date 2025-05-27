@@ -148,7 +148,7 @@ For very rare signs (≤30 masks), either merge them into an “other” class o
    2. verifies every `category_id` is in `categories`,
    3. flags missing/extra images.
 
-### Botton line
+### Bottom line
 
 - **Aim for 60 k – 150 k well‑drawn sign masks** to give each of the 200 categories several hundred examples.
 - **Mark inseparable clusters with an `iscrowd` (or `cluster`) flag** so they don’t handicap scoring but still enrich the visual grammar your competitors can learn.

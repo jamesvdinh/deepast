@@ -36,3 +36,5 @@ hide_table_of_contents: true
     content="https://scrollprize.org/img/social/opengraph.jpg"
   />
 </head>
+
+Public datasets from CDLI, ORACC, ETCSL, eBL, and the OARE database form the backbone of this competition. Each provides open access to transliterations, metadata, and sometimes translations or images.

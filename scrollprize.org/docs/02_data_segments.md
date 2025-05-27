@@ -36,3 +36,4 @@ hide_table_of_contents: true
   />
 </head>
 
+High-resolution photographs of Old Assyrian tablets are available from CDLI, Yale’s RTI collection, and other digitization efforts. The final and most complex challenge involves automatically segmenting these photos into individual signs or lines, preparing the data for image-to-text recognition models.
