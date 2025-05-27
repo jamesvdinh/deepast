@@ -66,7 +66,7 @@ const LatestPosts = () => {
     <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 max-w-9xl pb-3">
       <TopCard
         title="Get Started"
-        href="/get_started"
+        href="/deepast/get_started"
         subtext="$1.5M+ already awarded"
         useArrow={true}
       />

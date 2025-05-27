@@ -12,7 +12,7 @@ const config = {
   organizationName: "jamesvdinh",
   projectName: "deepast",
   tagline: "A $1,000,000+ machine learning and computer vision competition",
-  url: "https://jamesvdinh.github.io",
+  url: "https://jamesvdinh.github.io/",
   baseUrl: "/deepast/",
   onBrokenAnchors: "throw",
   onBrokenLinks: "throw",

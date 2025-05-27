@@ -1312,7 +1312,7 @@ export function Landing() {
             <div className="container mx-auto z-20 relative mb-12">
               <div className="md:pt-20 pt-8 mb-4">
                 <h1 className="text-4xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[90%] transition-opacity">
-                  <div className="max-w-3xl text-5xl">
+                  <div className="max-w-3xl text-6xl">
                     Unearth the voices of ancient merchants.
                     Translate the archives of Mesopotamia.
                   </div>
@@ -1402,7 +1402,7 @@ export function Landing() {
                   🏺 Our Story
                   <br />
                 </h1>
-                <p className="max-w-xl md:text-xl text-lg font-medium !mb-8 md:w-full w-4/5  !leading-[110%] tracking-tight opacity-60">
+                <div className="max-w-xl md:text-xl text-lg font-medium !mb-8 md:w-full w-4/5  !leading-[110%] tracking-tight opacity-60">
                   <span className="font-bold">
                     4000 years ago, the world's first commercial civilization was thriving.
                     Now, it's time to let their voices speak again.
@@ -1439,7 +1439,7 @@ export function Landing() {
                   This isn't just a language task. It's the recovery of a lost world.
                   <br/>
                   Join us—<span className="font-bold">help history speak again.</span>
-                </p>
+                </div>
                 {/* <div className="flex flex-col gap-3 max-w-7xl">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-6xl">
                     {prizes
