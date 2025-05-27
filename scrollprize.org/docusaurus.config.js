@@ -69,7 +69,7 @@ const config = {
         navbar: {
           title: "Deep Past Challenge",
           logo: {
-            alt: "Vesuvius Challenge Logo",
+            alt: "Deep Past Challenge Logo",
             src: "img/social/favicon-64x64.png",
           },
           items: [],
@@ -113,7 +113,7 @@ const config = {
           },
           {
             property: "og:title",
-            content: "Vesuvius Challenge",
+            content: "Deep Past Challenge",
           },
           {
             property: "og:description",
@@ -133,7 +133,7 @@ const config = {
           },
           {
             property: "twitter:title",
-            content: "Vesuvius Challenge",
+            content: "Deep Past Challenge",
           },
           {
             property: "twitter:description",
