@@ -1312,7 +1312,7 @@ export function Landing() {
             <div className="container mx-auto z-20 relative mb-12">
               <div className="md:pt-20 pt-8 mb-4">
                 <h1 className="text-5xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[90%] transition-opacity">
-                  <div className="max-w-3xl text-6xl">
+                  <div className="max-w-3xl">
                     Unearth the voices of ancient merchants.
                     Translate the archives of Mesopotamia.
                   </div>
