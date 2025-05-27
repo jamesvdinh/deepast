@@ -10,10 +10,10 @@ const remarkMath = require("remark-math").default; // Extract default export for
 const config = {
   title: "Deep Past Challenge",
   organizationName: "jamesvdinh",
-  projectName: "deepast",
+  projectName: "deeppast",
   tagline: "A $1,000,000+ machine learning and computer vision competition",
   url: "https://jamesvdinh.github.io/",
-  baseUrl: "/deepast/",
+  baseUrl: "/deeppast/",
   onBrokenAnchors: "throw",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",

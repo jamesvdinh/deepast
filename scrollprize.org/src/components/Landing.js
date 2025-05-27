@@ -1346,7 +1346,7 @@ export function Landing() {
                     entire scrolls.&nbsp;
                   </span>
                   <span className="opacity-100">
-                    <a href="/deepast/get_started">Join the community</a>&nbsp;
+                    <a href="/deeppast/get_started">Join the community</a>&nbsp;
                   </span>
                   <span className="opacity-80 md:opacity-60">
                     to win prizes and make history.
