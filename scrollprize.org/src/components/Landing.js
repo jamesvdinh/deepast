@@ -1440,7 +1440,7 @@ export function Landing() {
                   <br/>
                   Join us—<span className="font-bold">help history speak again.</span>
                 </p>
-                <div className="flex flex-col gap-3 max-w-7xl">
+                {/* <div className="flex flex-col gap-3 max-w-7xl">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-6xl">
                     {prizes
                       .filter((p) => !p.winners)
@@ -1448,7 +1448,7 @@ export function Landing() {
                         <Prize prize={p} key={i} />
                       ))}
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </section>
