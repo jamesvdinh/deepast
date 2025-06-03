@@ -705,12 +705,12 @@ const team = {
 
 const partners = [
   {
-    icon: "./img/landing/educe.svg",
-    href: "https://educelab.engr.uky.edu/",
+    icon: "./img/landing/FactGrid-Logo.png",
+    href: "https://database.factgrid.de/wiki/FactGrid:Cuneiform_Project",
   },
   {
-    icon: "./img/landing/institute.svg",
-    href: "https://www.institutdefrance.fr/en/home/",
+    icon: "./img/landing/OARE-Logo.ico",
+    href: "https://oare.byu.edu/",
   },
 ];
 
@@ -1464,63 +1464,6 @@ export function Landing() {
           {/* Team */}
           <section>
             <div className="container mx-auto z-30 relative">
-              <div className="mb-6 md:mb-24 max-w-6xl">
-                <h1 className="mb-16 text-4xl md:text-7xl font-black leading-none tracking-tighter ">
-                  Created By
-                </h1>
-                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 auto-rows-fr gap-2">
-                  {creators.map((c, i) => (
-                    <Creator creator={c} key={i} />
-                  ))}
-                </div>
-              </div>
-              <div className="mb-6 md:mb-10 max-w-6xl">
-                <h1
-                  className="mb-16 text-4xl md:text-7xl font-black leading-none tracking-tighter "
-                  name="sponsors"
-                  id="sponsors"
-                >
-                  Sponsors
-                </h1>
-                <h2 className="text-3xl md:text-5xl text-[#E8A42F]">Caesars</h2>
-                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 auto-rows-fr  gap-2 pb-8">
-                  {sponsors
-                    .filter((s) => s.amount >= 200000)
-                    .map((s, i) => (
-                      <Sponsor sponsor={s} key={i} />
-                    ))}
-                </div>
-                <h2 className="text-3xl md:text-5xl text-[#8658ED]">
-                  Senators
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-5 auto-rows-fr gap-2 pb-8">
-                  {sponsors
-                    .filter((s) => s.amount >= 50000 && s.amount < 200000)
-                    .map((s, i) => (
-                      <Sponsor sponsor={s} key={i} />
-                    ))}
-                </div>
-                <h2 className="text-3xl md:text-5xl text-[#F5653F]">
-                  Citizens
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-6 gap-2">
-                  {sponsors
-                    .filter((s) => s.amount < 50000)
-                    .map((s, i) => (
-                      <Sponsor sponsor={s} key={i} />
-                    ))}
-                </div>
-                <div className="flex justify-center py-8">
-                  <a href="https://donate.stripe.com/aEUg101vt9eN8gM144">
-                    <button
-                      className="px-4 py-3 uppercase font-bold rounded-full border-[#F5653F] border-solid text-[#F5653F] bg-transparent cursor-pointer group
-                    "
-                    >
-                      <AnimatedArrow text="Become a sponsor" button />
-                    </button>
-                  </a>
-                </div>
-              </div>
               <div className="py-10">
                 <h1 className="hidden md:block text-4xl md:text-7xl font-black leading-none tracking-tighter ">
                   Team
@@ -1534,7 +1477,7 @@ export function Landing() {
                       <Link link={t} key={i} />
                     ))}
                   </div>
-                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
+                  {/* <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
                     <h3 className="text-3xl font-black tracking-tighter">
                       EduceLab Team
                     </h3>
@@ -1565,7 +1508,7 @@ export function Landing() {
                     {team.papyrologyAdvisors.map((t, i) => (
                       <Link link={t} key={i} />
                     ))}
-                  </div>
+                  </div> */}
                 </div>
                 &nbsp;
                 <br />
@@ -1586,19 +1529,6 @@ export function Landing() {
                       <img src={p.icon} className={`h-${i === 1 ? 28 : 12}`} />
                     </a>
                   ))}
-                </div>
-                <div className="flex flex-wrap">
-                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
-                    <h3
-                      className="text-3xl font-black tracking-tighter"
-                      id="educelab-funders"
-                    >
-                      EduceLab funders
-                    </h3>
-                    {educelabFunders.map((t, i) => (
-                      <Link link={t} key={i} />
-                    ))}
-                  </div>
                 </div>
               </div>
             </div>
